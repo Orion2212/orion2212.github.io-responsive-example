@@ -12,22 +12,10 @@
     border: solid black 3px;
 }
 
-/* if the screen is less then 768 wide run this css*/
-@media screen and (max-width: 768px){
-    .gallery-images{
-        grid-template-colums: 1fr 1fr;
-    }
-
-    .gallery-images img{
-        border: solid red 2.5px;
-    }
-
-}
-
 .hero{
     background-image: url(../images/composite.jpg);
     background-size: cover;
-    min-height: 400px;
+    min-height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,12 +28,37 @@
     color: black;
 }
 
-@media screen and (max-width: 480px) {
+.px-heading {
+    font-size: 32px;
+}
+.rem-heading {
+    font-size: 2rem;
+}
+.em-heading {
+    font-size: 2em;
+}
+
+/* if the screen is less then 768 wide run this css*/
+@media screen and (max-width: 768px){
+    .gallery-images{
+        grid-template-colums: 1fr 1fr;
+    }
+
+    .gallery-images img{
+        border: solid red 2.5px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 30rem) {
     .gallery-images {
         grid-template-columns: 1fr;
     }
 
     .hero{
-        min-height: 300px;
+        min-height: 19rem;
     }
 }
